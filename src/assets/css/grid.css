@@ -5,12 +5,6 @@
   padding: 0;
 }
 
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
 .row:before, .row:after {
   content: "";
   display: table;
