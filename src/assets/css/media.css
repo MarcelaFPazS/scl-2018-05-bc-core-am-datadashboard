@@ -4,7 +4,7 @@ Breakpoints:
 376px - 666px; red
 667px - 1024; yellow
 1025px - 1600; blue
-*/
+
 
 @media (min-width: 320px) and (max-width: 375px) {
 }
@@ -17,3 +17,5 @@ Breakpoints:
 
 @media (min-width: 1025px) and (max-width: 1600px) {
 }
+
+*/
