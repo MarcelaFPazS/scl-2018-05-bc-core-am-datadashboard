@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Data Dashboard</title>
     <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href=" style.css">
+    <link rel="stylesheet" href="assets/css/styledos.css">
     <link rel="stylesheet" href="assets/css/media.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     	<!-- Aqui empieza el cambio de letras, letras de dashboard -->
@@ -16,71 +16,41 @@
      <!-- iconos-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
        <!-- imagen para pestaña de navegacion-->
-    <link rel="shortcut icon" href="../scl-2018-05-bc-core-am-datadashboard/src/img/img.ico.png" />
+    <link rel="shortcut icon" href="../src/assets/img/img.ico.png" />
 
   </head>
   <body>
     <section>
-      <div class="row banner">
-        <div class="col-3 logo">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-3">
           <img src="assets/img/logo-provisorio.png" alt="">
-        </div>
-        <div class="col-9 titulo"> <strong><b>DASHBOARD </b> </strong> </div>
-      </div>
-          <!-- cambio de botones -->
-      <div class="row cuerpo">
-          <div class="col-3 menu">
-            
+          <div class="menu">
             <div class=btn><button type="curso" id="btn"></i> <i class="fas fa-book-open"></i> MIS CURSOS </button></div>
             <div class=btn><button type="configuracion" id="btn"></i> <i class="fas fa-cog"></i> CONFIGURACIÓN </button></div>
-            <div class=btn><button type="dashboard" id="btn" ></i>  <i class="fas fa-list-alt"></i> DASHBOARD </button></div>
-           
-            
+            <div class=btn><button type="dashboard" id="btn" ></i>  <i class="fas fa-list-alt"></i> DASHBOARD </button></div> 
+            <div class=btn4><button type="cerrar" id="btn4" ></i><i class="fas fa-paper-plane"></i> CERRAR SESIÓN </button></div>
           </div>
-      <div class="row footer">
-          <div class="col-3 footer"></div>
-          <div class=btn4><button type="cerrar" id="btn4" ></i><i class="fas fa-paper-plane"></i> CERRAR SESIÓN </button></div>
-            
+        </div>
+        <div class="col-9"> 
+          <div class="titulo"><strong><b>DASHBOARD </b> </strong> </div>
+          <div>
+            <div class="informacion"> 
+              <h1 class="text-cohort"> SCL 2018-AM</h1>
+              <div class=" icono-carpeta"><i class="far fa-folder"></i></div>
+              <div class=btn5><button type="continuar" id="btn5" ></i> <b> CONTINUAR</b> </button></div> 
+            </div>
+            <div class="informacion"> 
+              <h1 class="text-cohort"> SCL 2018-PM</h1>
+              <div class=" icono-carpeta"><i class="far fa-folder"></i></div>
+              <div class=btn5><button type="continuar" id="btn5" ></i> <b> CONTINUAR</b> </button></div>
+            </div>
+          </div>
         </div>
       </div>
-          
       </div>
     </section>
-
-      
-
-
-<!-- creación de cajas  -->
-
-<section class="second-section">
-  <div class= "row informacion">
-      <div class="col-9 informacion">
-        <h1 class="text-cohort"> SCL 2018-AM</h1>
-        <div class=" icono-carpeta"><i class="far fa-folder"></i></div>
-        <div class=btn5><button type="continuar" id="btn5" ></i> <b> CONTINUAR</b> </button></div>
-  </div> 
-  </div>
-</section>
-
-<section class="second-section">
-    <div class= "row informacion">
-        <div class="col-9 informacion">
-          <h1 class="text-cohort"> SCL 2018-PM</h1>
-          <div class=" icono-carpeta"><i class="far fa-folder"></i></div>
-          <div class=btn5><button type="continuar" id="btn5" ></i> <b> CONTINUAR</b> </button></div>
-    </div> 
-    </div>
-  </section>
   
-
-
-
-
-
     <script src="main.js"></script>
-    
-
-
-
-  </body>
+    </body>
 </html>
