@@ -74,3 +74,45 @@ background-color:#FFC107;
   right: 0%;
   bottom: 0%;
 }
+
+.informacion{
+  border: 1px solid none;
+  padding-left: 2%;
+  margin-top: 5%;
+  -webkit-box-shadow: -5px 4px 21px -6px rgba(212,208,212,1);
+  -moz-box-shadow: -5px 4px 21px -6px rgba(212,208,212,1);
+  box-shadow: -5px 4px 21px -6px rgba(212,208,212,1);
+  width: 1000px;
+  height:180px;
+
+
+}
+
+.text-cohort{
+  color: #2b2b2b;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  padding-top:1% ;
+  width: 70%;
+}
+
+#btn5{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700px;
+  font-size: 15px;
+  color: #373737;
+  background-color: #FFC107;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  width: 120px;
+  height:40px;
+  float:right;
+ }
+
+ #btn5:hover{
+  color:#FFC107;
+  background-color:#FFA000;
+   }
