@@ -7,7 +7,6 @@
   font-size: 21px;
   padding-top:1% ;
   width: 70%;
-
 }
 
 .imglaboratoria{
@@ -15,5 +14,56 @@
   background-position: center;
   margin-left: 25%;
   padding-top:3%;
+}
 
+#btn{
+  text-align: left;
+  text-decoration: none;
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color:#646464 ;
+  background-color:#FFFFFF;
+  border-bottom: none;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  height: 45px;
+  width: 350px;
+  position: relative;
+  
+
+}
+#btn:hover{
+color:#FFFFFF;
+background-color:#FFC107;
+}
+
+
+#btn4{
+  text-decoration: none;
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color:#646464 ;
+  background-color:#FFFFFF;
+  border-bottom: none;
+  height: 45px;
+  width: 350px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  left: 0%;
+  bottom: 0%;
+ 
+    
+
+}
+#btn4:hover{
+  color:#FFFFFF;
+  background-color:#EBEBEB;
+  right: 0%;
+  bottom: 0%;
 }
