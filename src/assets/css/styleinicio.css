@@ -1,38 +1,19 @@
-
-
-
-body {
-  color: #2b2b2b;
-  font-family: museo-sans, Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 100;
-  font-size: 16px;
-  line-height: 145%;
-}
-
-.titulo {
+.second{
   background-color:#FFC107;
+  height:60px;
   color: #2b2b2b;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 21px;
+  padding-top:1% ;
   width: 70%;
-  float:right;
 }
 
-
-.menu {
-  top:50%;
-  bottom:50%;
-  background-color:#FFFFFF;
-  top: 1000px;
-  height: 200px;
-  color:#646464 ;
-  font-family: 'Hind Madurai', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  letter-spacing: 2px;
-  
-  
+.imglaboratoria{
+  width: 40%;
+  background-position: center;
+  margin-left: 25%;
+  padding-top:3%;
 }
 
 #btn{
@@ -59,7 +40,13 @@ color:#FFFFFF;
 background-color:#FFC107;
 }
 
-
+.menu{
+  padding-top:30%;
+}
+.footer{
+  margin-top: 100%;
+  
+}
 
 #btn4{
   text-decoration: none;
@@ -76,9 +63,7 @@ background-color:#FFC107;
   border-left: 0;
   border-right: 0;
   left: 0%;
-  bottom: 0%;
-  position: absolute;
-    
+  bottom: 0%;   
 
 }
 #btn4:hover{
@@ -88,49 +73,21 @@ background-color:#FFC107;
   bottom: 0%;
 }
 
-
-
-
-
-img {
-  height: 30px;
-  display: inline-block;
-}
-
 .informacion{
+  border: 1px solid none;
+  padding-left: 2%;
+  margin-top: 5%;
   -webkit-box-shadow: -5px 4px 21px -6px rgba(212,208,212,1);
   -moz-box-shadow: -5px 4px 21px -6px rgba(212,208,212,1);
   box-shadow: -5px 4px 21px -6px rgba(212,208,212,1);
   width: 1000px;
-  height:180px;
-  float: right;
-
-  
- 
- }
-
-.icono-carpeta{
-  float: bottom;
 }
 
-#btn5{
+.text-cohort{
+  color: #2b2b2b;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700px;
-  font-size: 15px;
-  color: #373737;
-  background-color: #FFC107;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 0;
-  width: 120px;
-  height:40px;
-  float:right;
- }
-
- #btn5:hover{
-  color:#FFC107;
-  background-color:#FFA000;
-   }
-
-
+  font-weight: 700;
+  font-size: 21px;
+  padding-top:1% ;
+  width: 70%;
+}
