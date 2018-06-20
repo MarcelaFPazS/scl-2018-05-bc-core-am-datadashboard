@@ -47,14 +47,37 @@ background-color:#FFC107;
   margin-top: 100%;
   
 }
+.vale{
 
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nombrevale{
+  font-family: 'Hind Madurai', sans-serif;
+  color:#7c7c7c ;
+  display: block;
+  text-align: center;
+}
+  
+
+
+.mailvale{
+  font-family: 'Hind Madurai', sans-serif;
+  color:#a3a2a2 ;
+  display: block;
+  text-align: center;
+
+
+}
 #btn4{
   text-decoration: none;
   font-family: 'Hind Madurai', sans-serif;
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 1px;
-  color:#646464 ;
+  color:#838383 ;
   background-color:#FFFFFF;
   border-bottom: none;
   height: 45px;
@@ -71,6 +94,22 @@ background-color:#FFC107;
   background-color:#EBEBEB;
   right: 0%;
   bottom: 0%;
+}
+
+.submit{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700px;
+  font-size: 15px;
+  color: #373737;
+  background-color: #FFC107;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  width: 120px;
+  height:40px;
+  float:right;
+
 }
 
 .informacion{
