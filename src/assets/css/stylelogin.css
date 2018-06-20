@@ -20,6 +20,22 @@
   float:left;
 }
 
+.btncont{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700px;
+  font-size: 15px;
+  color: #373737;
+  background-color: #FFC107;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  width: 120px;
+  height:40px;
+  float:right;
+
+}
+
 #btnlog:hover {
   color:#FFC107;
   background-color:#FFA000;
