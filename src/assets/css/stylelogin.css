@@ -19,8 +19,27 @@
   height:40px;
   float:left;
 }
+.tiempo{
+  width: 5%;
+  background-position: center;
+  margin-left: 25%;
+  padding-top:2%;
+}
 
-#btnlog:hover {
+#btncont{
+  border-radius: 112px 112px 112px 112px;
+-moz-border-radius: 112px 112px 112px 112px;
+-webkit-border-radius: 112px 112px 112px 112px;
+border: 1px solid #8c8c8c;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700px;
+  font-size: 15px;
+  color: #373737;
+  background-color: #FFC107;
+
+}
+
+#btncont:hover {
   color:#FFC107;
   background-color:#FFA000;
 }
