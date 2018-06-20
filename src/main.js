@@ -15,10 +15,13 @@ function dataJSON () {
 const renderUsers = data => {
   btn.addEventListener('click', () => {
     const render = data.forEach(element => {
-      //element.name === arreglo[i].name
-      return container.innerHTML += `<p>${element.name}</p>`
+      const contenedorData = document.createElement('div');
+      const contenedor = document.getElementById('contenedor');
+      contenedor.appendChild(contenedorData);
+      let titulo_text= document.createTextNode(element.id);
+      contenedorData.appendChild(titulo_text);
     })
-    return render;
+    return contenedorData;
   })
 }
 
