@@ -23,13 +23,11 @@ const renderUsers = data => {
       contenedorData.appendChild(lim);
       //agregarle atributo href
       lim.setAttribute('href', 'estgeneral.html');
-      //indicarle a donde quieren enlazar
-      
 
       let titulo_text= document.createTextNode(element.id);
       lim.appendChild(titulo_text);
     })
-    return contenedorData;
+    return contenedorData.innertHTML;
   })
 }
 
