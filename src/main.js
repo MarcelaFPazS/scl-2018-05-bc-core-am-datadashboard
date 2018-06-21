@@ -49,6 +49,7 @@ function computeUsersStats () {
       })
       return render;
       console.log(render);
+      
     })
   }
 }
