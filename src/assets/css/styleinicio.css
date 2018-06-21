@@ -87,6 +87,8 @@ background-color:#FFC107;
   border-right: 0;
   left: 0%;
   bottom: 0%;   
+  
+  
 
 }
 #btn4:hover{
@@ -94,6 +96,7 @@ background-color:#FFC107;
   background-color:#EBEBEB;
   right: 0%;
   bottom: 0%;
+  
 }
 
 .submit{
@@ -133,6 +136,8 @@ background-color:#FFC107;
 
 .tiempo{
   width: 12%;
-  float:right;;
+  float:right;
  
 }
+
+

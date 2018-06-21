@@ -19,12 +19,7 @@
   height:40px;
   float:left;
 }
-.tiempo{
-  width: 5%;
-  background-position: center;
-  margin-left: 25%;
-  padding-top:2%;
-}
+
 
 #btncont{
   border-radius: 112px 112px 112px 112px;
@@ -55,4 +50,12 @@ border: 1px solid #8c8c8c;
   height:320px;
 }
 
+.img-laboratoria{
+  width: 100%;
+  background-position: center;
+  margin-left: 25%;
+  padding-top:3%;
+
+  image-rendering: optimizeSpeed;
+}
 
