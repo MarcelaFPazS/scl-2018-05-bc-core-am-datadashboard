@@ -45,7 +45,7 @@ function computeUsersStats () {
     btnlista.addEventListener('click', () => {
       const render = data.forEach(element => {
       //element.name === arreglo[i].name
-      return hola.innerHTML += `<li>${element.name}</li>`
+      return container.innerHTML += `<li>${element.name}</li>`
       })
       return render;
       console.log(render);
