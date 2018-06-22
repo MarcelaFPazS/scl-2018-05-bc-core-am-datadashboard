@@ -1,6 +1,7 @@
 window.onload = () => {
   dataJSON ();
   computeUsersStats ();
+  searchStudent ();
 }
 
 function dataJSON () {
@@ -45,10 +46,19 @@ function computeUsersStats () {
     btnlista.addEventListener('click', () => {
       const render = data.forEach(element => {
       //element.name === arreglo[i].name
-      return container.innerHTML += `<li>${element.name}</li>`
+      return container.innerHTML += `<a><p>${element.name}</p></a>`
       })
       return render;
       console.log(render);
     })
   }
+}
+
+function searchStudent() {
+  //input vacio desde el que lo saco
+  const buscar = document.getElementById('buscar').value;
+  const filtro = window.filterUsers(usersData, search);
+  const table = document.getElementById('search-a');
+ 
+  renderUserTable(usersFiltered);
 }
