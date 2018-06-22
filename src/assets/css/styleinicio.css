@@ -197,6 +197,17 @@ background-color:#FFC107;
   margin-bottom: 2px;
   padding: 0%;
 }
+
+.informacion{
+  border: 1px solid none;
+  padding-left: 2%;
+  margin-top: 5%;
+  -webkit-box-shadow: -5px 4px 21px -6px rgba(212,208,212,1);
+  -moz-box-shadow: -5px 4px 21px -6px rgba(212,208,212,1);
+  box-shadow: -5px 4px 21px -6px rgba(212,208,212,1);
+  width: 1000px;
+  border-top: 50%
+}
 }
 
 
