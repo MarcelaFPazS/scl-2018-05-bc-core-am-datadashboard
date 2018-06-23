@@ -1,22 +1,25 @@
+//variables globales
+let users = [];
+
+//funciones
 window.onload = () => {
-  dataJSON ();
-  computeUsersStats ();
-  searchStudent ();
+  dataJSON();
+  computeUsersStats();
+  searchStudent();
 }
 
-function dataJSON () {
-  const btn = document.getElementById('btncont');
+// data cohorts
+function dataJSON() {
+  const btnCohort = document.getElementById('btncont');
   const usersJSON = '../data/cohorts.json';
   fetch(usersJSON)
   .then(response => response.json())
   .then(data => {
-    renderUsers(data);    
-})
-  const renderUsers = data => {
-    btn.addEventListener('click', () => {
-      const limaCohort = data.id;
+    renderCohort(data);    
+  })
+  const renderCohort = data => {
+    btnCohort.addEventListener('click', () => {
         const render = data.forEach(element => {
-          console.log(limaCohort);
           const contenedorData = document.createElement('li');
           const contenedor = document.getElementById('contenedor');
           contenedor.appendChild(contenedorData);
@@ -30,7 +33,8 @@ function dataJSON () {
   }
 }
 
-function computeUsersStats () {
+//data lim-2018-03-pre-core-pw
+function computeUsersStats() {
   const btnlista = document.getElementById('btnlista');
   const container = document.getElementById('root');
   const usersJSON = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
@@ -45,11 +49,22 @@ function computeUsersStats () {
   const renderUsers = data => {
     btnlista.addEventListener('click', () => {
       const render = data.forEach(element => {
+      let ranking = 0;
       //element.name === arreglo[i].name
-      return container.innerHTML += `<a><p>${element.name}</p></a>`
+      users = data;
+      console.log(users);
+      return container.innerHTML += '<tr>' +
+      '<td>' + ranking + '</td>' +
+      '<td>' + user.name.toUpperCase() + '</td>' +
+      '<td>' + percent + '</td>' +
+      '<td>' + +'</td>' +
+      '<td>' + +'</td>' +
+      '<td>' + +'</td>' +
+      '<td>' + +'</td>' +
+      '</tr>';
       })
       return render;
-      console.log(render);
+      //console.log(render);
     })
   }
 }
@@ -93,11 +108,27 @@ function loadAllData () {
 }
 */
 
+//filtrar lista alumnas
 function searchStudent() {
   //input vacio desde el que lo saco
-  const buscar = document.getElementById('buscar').value;
+  const buscar = document.getElementById('buscar');
+  //enlace con data.js
   const filtro = window.filterUsers(users, search);
+  //donde quiero dejarlo en el html
   const table = document.getElementById('search-a');
- 
-  renderUserTable(usersFiltered);
+
+  buscar.addEventListener ('keypress', (event) => {
+    let key = event.wich || event.keyCode; //evento del teclado
+    if (key === 13) { //codigo 13 es enter
+      renderInfo(users);
+    }
+  })
+
+  const renderInfo = users => {
+    if(users.response === true){
+      table.innerHTML = `<a><p>${element.name}</p></a>`;
+    } else{
+      return "busca nuevamente"
+      }
+  }
 }
