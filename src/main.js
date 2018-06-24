@@ -1,7 +1,7 @@
 //Para login con alert
 
-let go = () => { //solo funciona con este nombre y contrasela
-  if (document.form.password.value ==='123' && document.form.login.value ==='Valentina'){ 
+let go = () => { //solo funciona con este nombre y contraseña
+  if (document.form.password.value ==='laboratoria' && document.form.login.value ==='Valentina'){ 
           window.open('menu.html') //abre página index si se pone correcto
 
       } 
