@@ -6,32 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Data Dashboard</title>
     <link rel="stylesheet" href="assets/css/stylelogin.css">
+     <!-- letras del menu-->
+    <link href = "https://fonts.googleapis.com/css?family= Hind + Madurai " rel = "stylesheet">
+    <!-- imagen para pestaña de navegacion-->
+    <link rel="shortcut icon" href="../src/assets/img/img.ico.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   </head>
   <body>
-    
-    <div class="container login">
-      <form class="form-inline informacion">
-        <img src="assets/img/logo-provisorio.png" id="imagen" alt="Logo laboratoria">
-      
-        <label class="sr-only"></label>
-        <div class="input-group mb-2 mr-sm-2">
-          <div class="input-group-prepend">
-          </div>
-          <input type="email" name="email" class="form-control caja" id="inlineFormInputGroupUsername2" placeholder="Correo electrónico">
-        </div>
-      
-        <label class="sr-only" >Name</label>
-        <input type="text" class="form-control mb-2 mr-sm-2 caja" id="inlineFormInputName2" name="contraseña" placeholder="Contraseña">
-    
-        <a class="btn btn-primary mb-2" id="btnlog" href="menu.html">Iniciar Sesión</a>
-      </form>
-    </div>
-    
-
+      <section class="row">
+        <section class ="col-12">
+          <form name = "form" action="login">
+              <img class="imglogin" src="img/img-login-2.jpg" alt="inicio">
+            <div class ="container">
+              <p class= "text">Usuario:</p>   <input class="text2" type= "text" name="login"> 
+              <P class= "text">Contraseña:</p>  <input class= "text2" type= "password" name= "password"> 
+          <!-- botón -->
+          <input id="btnLogin"onclick=go() type= "button" value= "Acceder">
+            </div>
+          </form>
+        </section>
+      </section>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  <script src="login.js"></script>
+  <script src="main.js"></script>
   </body>
 </html>
