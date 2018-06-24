@@ -36,7 +36,7 @@ function dataJSON() {
 //data lim-2018-03-pre-core-pw
 function computeUsersStats() {
   const btnlista = document.getElementById('btnlista');
-  const container = document.getElementById('root');
+  const container = document.getElementsByClassName('table');
   const usersJSON = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
 
   fetch(usersJSON)
@@ -48,22 +48,23 @@ function computeUsersStats() {
 
   const renderUsers = data => {
     btnlista.addEventListener('click', () => {
-      const render = data.forEach(element => {
-      let ranking = 0;
+      const render2 = data.forEach(element => {
+      let ranking = null;
+      let percent = null;
       //element.name === arreglo[i].name
-      users = data;
       console.log(users);
-      return container.innerHTML += '<tr>' +
-      '<td>' + ranking + '</td>' +
-      '<td>' + user.name.toUpperCase() + '</td>' +
-      '<td>' + percent + '</td>' +
+      return container.innerHTML += `'<tr>' +
+      '<td>' + ${ranking} + '</td>' +
+      '<td>' + ${element.name.toUpperCase()} + '</td>' +
+      '<td>' + ${percent}: + '</td>' +
       '<td>' + +'</td>' +
       '<td>' + +'</td>' +
       '<td>' + +'</td>' +
       '<td>' + +'</td>' +
-      '</tr>';
+      '</tr>'`
       })
-      return render;
+      return render2
+      console.log(render2);
       //console.log(render);
     })
   }
