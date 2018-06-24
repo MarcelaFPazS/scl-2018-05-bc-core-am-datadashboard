@@ -1,4 +1,4 @@
-#imagen {
+#imagenlab {
   width: 40%;
   background-position: center;
   margin-left: 25%;
@@ -56,6 +56,45 @@ border: 1px solid #8c8c8c;
 }
 
 
+
+#btnLogin{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700px;
+  font-size: 15px;
+  color: #373737;
+  background-color: #FFC107;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  width: 120px;
+  height:40px;
+  margin-left: 3%;
+  
+}
+
+.logolab{
+  width: 10%;
+  margin-left: 3%;
+}
+
+.text{
+  padding: 1%;
+  margin-left: 3%;
+}
+.text2{
+ 
+  margin-left: 3%;
+
+}
+
+.container{
+  border: 1px solid none;
+  padding-left: 2%;
+  margin-top: 5%;
+  
+}
+
 @media only screen and (max-width: 600px) {
   #imagen {
     width: 40%;
@@ -65,8 +104,12 @@ border: 1px solid #8c8c8c;
   }
   
 
+ 
 
-}
+  }
+
+
+
 
 
 @media only screen and (max-width: 800px){
