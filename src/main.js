@@ -1,20 +1,15 @@
-//Para login con alert
-
-let go = () => { //solo funciona con este nombre y contraseña
-  if (document.form.password.value ==='laboratoria' && document.form.login.value ==='Valentina'){ 
-          window.open('menu.html') //abre página index si se pone correcto
-
-      } 
-      else{ 
-           alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
-      } 
-  } 
-
-
-
-
 //variables globales
 let users = [];
+
+//Para login con alert
+let go = () => { //solo funciona con este nombre y contraseña
+if (document.form.password.value ==='laboratoria' &&  document.form.login.value ==='Valentina'){ 
+  window.open('menu.html') //abre página index si se pone correcto
+  } 
+  else{ 
+    alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+  } 
+} 
 
 //funciones
 window.onload = () => {
@@ -51,7 +46,9 @@ function dataJSON() {
 //data lim-2018-03-pre-core-pw
 function computeUsersStats() {
   const btnlista = document.getElementById('btnlista');
-  const container = document.getElementsByClassName('table');
+  const containerRanking = document.getElementById('ranking');
+  const containerName = document.getElementById('name');
+  const containerPercent = document.getElementById('percent');
   const usersJSON = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
 
   fetch(usersJSON)
@@ -61,26 +58,15 @@ function computeUsersStats() {
     renderUsers(data);
   })
 
+
   const renderUsers = data => {
     btnlista.addEventListener('click', () => {
-      const render2 = data.forEach(element => {
+      const render = data.forEach(element => {
       let ranking = null;
       let percent = null;
-      //element.name === arreglo[i].name
-      console.log(users);
-      return container.innerHTML += `'<tr>' +
-      '<td>' + ${ranking} + '</td>' +
-      '<td>' + ${element.name.toUpperCase()} + '</td>' +
-      '<td>' + ${percent}: + '</td>' +
-      '<td>' + +'</td>' +
-      '<td>' + +'</td>' +
-      '<td>' + +'</td>' +
-      '<td>' + +'</td>' +
-      '</tr>'`
+      return containerName.innerHTML += `<p>${element.name}</p>`
       })
-      return render2
-      console.log(render2);
-      //console.log(render);
+      return containerRanking.innerHTML += ranking
     })
   }
 }
