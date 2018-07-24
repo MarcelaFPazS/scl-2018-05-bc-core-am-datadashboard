@@ -66,13 +66,7 @@ function computeUsersStats() {
       let percent = null;
       return containerName.innerHTML += `<p>${element.name}</p>`
       })
-<<<<<<< HEAD
-      return render;
-      console.log(render);
-      
-=======
       return containerRanking.innerHTML += ranking
->>>>>>> upstream/master
     })
   }
 }

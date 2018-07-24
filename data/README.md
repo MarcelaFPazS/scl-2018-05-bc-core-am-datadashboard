@@ -78,6 +78,8 @@ Para así proporcionar un estado de comodidad al usuario, ya que al parecerle co
 
 
 ## Implementación de la Interfaz de Usuario (HTML/CSS/JS)
+ 
+ ( Para poder tener acceso a la plataforma, el usuario es Valentina y la contraseña laboratoria)
 
 1. Generar una interfaz parecida al lsm
 2. Permitir al usuario ingresar mediante correo y contraseña, e ingresar al menu
